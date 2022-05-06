@@ -1,0 +1,6 @@
+framework module Pods_Team_SSS_Team_SSSUITests {
+  umbrella header "Pods-Team_SSS-Team_SSSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
