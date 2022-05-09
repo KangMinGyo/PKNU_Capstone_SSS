@@ -267,6 +267,9 @@
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="photo" catalog="system"/>
+                                        <connections>
+                                            <action selector="addImageButton:" destination="5dg-aB-bn2" eventType="touchUpInside" id="frI-Ge-Wgj"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPp-d2-kCt">
                                         <rect key="frame" x="57" y="15" width="34" height="21"/>
@@ -285,7 +288,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TkH-yE-uAk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TkH-yE-uAk">
                                 <rect key="frame" x="20" y="166" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -314,12 +317,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="기타 사유 신고" id="V9b-0G-sxs">
-                        <barButtonItem key="rightBarButtonItem" title="신고" id="H8J-l6-3f4"/>
+                        <barButtonItem key="rightBarButtonItem" title="신고" id="H8J-l6-3f4">
+                            <connections>
+                                <action selector="reportButton:" destination="5dg-aB-bn2" id="1sX-Y7-JdJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="otherLabel" destination="GcB-XO-7jT" id="DYP-7X-vGL"/>
                         <outlet property="pickerButton" destination="YxP-bY-9aq" id="xmP-Fd-yRK"/>
                         <outlet property="pickerView" destination="Dcy-0r-ibc" id="k11-wS-cci"/>
+                        <outlet property="thumbnailImageView" destination="TkH-yE-uAk" id="6BK-f7-G4t"/>
+                        <outlet property="videoCountLabel" destination="FPp-d2-kCt" id="VV4-UK-DRC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRd-G5-a3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

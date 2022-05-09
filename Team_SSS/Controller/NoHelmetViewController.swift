@@ -35,6 +35,7 @@ class NoHelmetViewController: UIViewController {
     
     //신고하기 버튼
     @IBAction func reportButtonClicked(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
         do {
             uploadImage(imageURL: videoURL!)
         } catch {
