@@ -18,7 +18,6 @@
 		8C9F8558282125D000EA8EFD /* Team_SSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F8557282125D000EA8EFD /* Team_SSSUITests.swift */; };
 		8C9F855A282125D000EA8EFD /* Team_SSSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F8559282125D000EA8EFD /* Team_SSSUITestsLaunchTests.swift */; };
 		8C9F85682824E4DA00EA8EFD /* NoHelmetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F85672824E4DA00EA8EFD /* NoHelmetViewController.swift */; };
-		8C9F856A28254DFF00EA8EFD /* reportRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F856928254DFF00EA8EFD /* reportRulesViewController.swift */; };
 		8C9F856C282679B100EA8EFD /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F856B282679B100EA8EFD /* OtherViewController.swift */; };
 		91CA9ED8105731F701E69CCE /* Pods_Team_SSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1483F20A0D9E3AD2D76242 /* Pods_Team_SSS.framework */; };
 		A5BCB6323545DC11DD5C90FA /* Pods_Team_SSSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392E97EECF2D12220B66F964 /* Pods_Team_SSSTests.framework */; };
@@ -64,7 +63,6 @@
 		8C9F8557282125D000EA8EFD /* Team_SSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team_SSSUITests.swift; sourceTree = "<group>"; };
 		8C9F8559282125D000EA8EFD /* Team_SSSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team_SSSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8C9F85672824E4DA00EA8EFD /* NoHelmetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHelmetViewController.swift; sourceTree = "<group>"; };
-		8C9F856928254DFF00EA8EFD /* reportRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reportRulesViewController.swift; sourceTree = "<group>"; };
 		8C9F856B282679B100EA8EFD /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		C7F6F772636720A17CF7943D /* Pods-Team_SSS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Team_SSS.debug.xcconfig"; path = "Target Support Files/Pods-Team_SSS/Pods-Team_SSS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +166,6 @@
 			children = (
 				8C9F853A282125CE00EA8EFD /* ViewController.swift */,
 				8C9F85672824E4DA00EA8EFD /* NoHelmetViewController.swift */,
-				8C9F856928254DFF00EA8EFD /* reportRulesViewController.swift */,
 				8C9F856B282679B100EA8EFD /* OtherViewController.swift */,
 			);
 			path = Controller;
@@ -423,7 +420,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9F856A28254DFF00EA8EFD /* reportRulesViewController.swift in Sources */,
 				8C9F856C282679B100EA8EFD /* OtherViewController.swift in Sources */,
 				8C9F853B282125CE00EA8EFD /* ViewController.swift in Sources */,
 				8C9F8537282125CE00EA8EFD /* AppDelegate.swift in Sources */,
@@ -606,6 +602,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AH24YSXN5M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Team_SSS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -634,6 +631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AH24YSXN5M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Team_SSS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

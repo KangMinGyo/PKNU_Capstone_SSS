@@ -37,6 +37,7 @@ class NoHelmetViewController: UIViewController {
     @IBAction func reportButtonClicked(_ sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
         do {
+            print("videoURL : \(videoURL!)")
             uploadImage(imageURL: videoURL!)
         } catch {
             
@@ -58,7 +59,6 @@ func uploadImage(imageURL: URL?) {
         guard let statusCode = response.response?.statusCode,
               statusCode == 200
         else { return }
-
     }
 }
 
