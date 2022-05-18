@@ -252,9 +252,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlz-7S-eZa">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlz-7S-eZa">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFW-Uv-TnT">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -287,6 +286,9 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EwW-ps-I8X"/>
+                                </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TkH-yE-uAk">
                                 <rect key="frame" x="20" y="166" width="128" height="128"/>
@@ -308,13 +310,20 @@
                                     <action selector="pickerButton:" destination="5dg-aB-bn2" eventType="touchUpInside" id="5SN-4E-dVR"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dcy-0r-ibc">
-                                <rect key="frame" x="0.0" y="574" width="414" height="230"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcy-0r-ibc">
+                                <rect key="frame" x="0.0" y="591" width="414" height="216"/>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ToB-Xv-lOR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vlz-7S-eZa" firstAttribute="bottom" secondItem="ToB-Xv-lOR" secondAttribute="bottom" id="222-mS-AfC"/>
+                            <constraint firstItem="vlz-7S-eZa" firstAttribute="top" secondItem="Dcy-0r-ibc" secondAttribute="bottom" constant="5" id="IwL-j6-QQ1"/>
+                            <constraint firstItem="vlz-7S-eZa" firstAttribute="leading" secondItem="ToB-Xv-lOR" secondAttribute="leading" id="QvJ-Mu-aR7"/>
+                            <constraint firstItem="vlz-7S-eZa" firstAttribute="trailing" secondItem="ToB-Xv-lOR" secondAttribute="trailing" id="aeO-oY-xhi"/>
+                            <constraint firstItem="Dcy-0r-ibc" firstAttribute="trailing" secondItem="ToB-Xv-lOR" secondAttribute="trailing" id="rE9-JX-A9m"/>
+                            <constraint firstItem="Dcy-0r-ibc" firstAttribute="leading" secondItem="ToB-Xv-lOR" secondAttribute="leading" id="wzi-Rz-EPB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="기타 사유 신고" id="V9b-0G-sxs">
                         <barButtonItem key="rightBarButtonItem" title="신고" id="H8J-l6-3f4">
