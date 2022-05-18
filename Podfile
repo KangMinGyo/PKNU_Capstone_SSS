@@ -7,7 +7,11 @@ target 'Team_SSS' do
 
   # Pods for Team_SSS
 
+  #Almofire
   pod 'Alamofire', '~> 5.6.1'
+
+  #Toast message
+  pod 'Toast-Swift', '~> 5.0.1'
 
   target 'Team_SSSTests' do
     inherit! :search_paths
