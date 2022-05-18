@@ -70,11 +70,15 @@ class OtherViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     
     //신고하기 버튼
     @IBAction func reportButton(_ sender: UIBarButtonItem) {
-        self.navigationController?.popViewController(animated: true)
+        self.view.makeToast("신고가 완료되었습니다!", duration: 1.0, position: .center)
         do {
             otherViewUploadImage(imageURL: videoURL!)
         } catch {
             
+        }
+        //1초 후 실행
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.navigationController?.popViewController(animated: true)
         }
     }
     
