@@ -34,6 +34,11 @@ class NoHelmetViewController: UIViewController {
         
     }
     
+    //카메라로 video 촬영
+    @IBAction func cameraButton(_ sender: UIButton) {
+        
+    }
+    
     //신고하기 버튼
     @IBAction func reportButtonClicked(_ sender: UIBarButtonItem) {
         self.view.makeToast("신고가 완료되었습니다!", duration: 1.0, position: .center)
