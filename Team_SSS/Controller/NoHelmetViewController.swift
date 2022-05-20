@@ -36,7 +36,11 @@ class NoHelmetViewController: UIViewController {
     
     //카메라로 video 촬영
     @IBAction func cameraButton(_ sender: UIButton) {
-        
+        let camera = UIImagePickerController()
+        camera.delegate = self
+        camera.sourceType = .camera
+        camera.mediaTypes = UIImagePickerController.availableMediaTypes(for: .camera) ?? []
+        self.present(camera, animated: true, completion: nil)
     }
     
     //신고하기 버튼
