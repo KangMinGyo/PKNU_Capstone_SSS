@@ -112,5 +112,19 @@ extension NoHelmetViewController: UIImagePickerControllerDelegate, UINavigationC
             videoCountLabel.text = "1/1"
         
         }
+        
+        //동영상 저장
+        if let url = info[.mediaURL] as? URL, UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path) {
+                    UISaveVideoAtPathToSavedPhotosAlbum(url.path, self, #selector(savedVideo), nil)
+                }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func savedVideo(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo: UnsafeMutableRawPointer?) {
+                if let error = error {
+                    print(error)
+                    return
+                }
+                print("success")
     }
 }
