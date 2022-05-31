@@ -5,5 +5,5 @@ YOLOv5를 이용한 전동킥보드 안전모 미착용 적발 시스템을 개�
 
 ## 기술스택🛠 <br/>
  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=python&logoColor=white">
- <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=python&logoColor=white"> <br/>
+ <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=python&logoColor=white">
   
